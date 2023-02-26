@@ -10,10 +10,10 @@ Console.WriteLine("Введите число n");
 int n=int.Parse(Console.ReadLine()!);
 int PrintNumbers ( int m,  int n)
 {
-   if(n>m) return m+n+n-1;
+   if(n==m) return m;
    else
    {
-    return m;
+    return PrintNumbers(m,n-1)+n;
    }
 }  
 
